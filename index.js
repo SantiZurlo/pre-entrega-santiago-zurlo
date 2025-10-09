@@ -39,3 +39,18 @@ fetch('https://fakestoreapi.com/products', {
   .then(data => console.log(data));
 
 }
+
+if(method == 'DELETE' && resource.startsWith('products/')){
+let id = resource.split("/")[1];
+id = parseInt(id);
+
+if(isNaN(id) || id <= 0){
+    console.log("No valido");
+}
+fetch('https://fakestoreapi.com/products/' + id, {
+  method: 'DELETE'
+})
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+}
