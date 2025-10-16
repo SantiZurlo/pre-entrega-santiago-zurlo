@@ -14,13 +14,17 @@ Permite gestionar productos desde la terminal usando la API FakeStore: listar, b
 npm run start GET products
 
 ###  Obtener un producto por ID
-npm run start GET products/<id>
 ```bash
+npm run start GET products/<id>
+
 
 ###  Crear un nuevo producto
-npm run start POST products <title>
 ```bash
+npm run start POST products <title>
+
 
 ###  Eliminar un producto por ID
+```bash
 npm run start DELETE products/<id>
 ```bash
+
